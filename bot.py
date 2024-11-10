@@ -37,7 +37,7 @@ logger = logging.getLogger(__name__)
 
 murl = env.get('MONGO', 'mongo:27017')
 
-client = MongoClient('mongodb://' + murl)
+client = MongoClient('mongodb+srv://Manik:manik11@cluster0.xtzuh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0' + murl)
 
 db = client.tictactoe
 
